@@ -38,18 +38,27 @@ get '/mcd/:a/:b' do
 end
 
 get '/sum/*' do
-	a = params['splat']
-	a.inject(0){|q, n| q + n.to_i }.to_s
+  s = params['splat']
+  s.first.split('/').inject(0) {|a, b| a= b.to_i + a }.to_s
+  
 end
 
 get '/even/*' do
-end
+  s = params['splat']
+  s.first.split('/').inject(0) { |c, d| c = d.to_i.even? ? c+1 : c }.to_s
+ end
 
 post '/random' do
 	Random.rand(0..1000).to_s
-
+# Para probarlo
+# curl -d '' -X POST http://localhost:4567/random/
 end
 
 post '/random/:lower/:upper' do
+#POST /random/:lower/:upper presenta un número al azar entre :lower y :upper (dos valores numéricos)
+ a = params['lower'].to_i
+ b = params['upper'].to_i
+ Random.rand(a..b).to_s
 end
+
 
