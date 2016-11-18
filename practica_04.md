@@ -210,7 +210,8 @@ usarlo?
    *status* HTTP `200` sólo en caso que el número a devolver sea `42`, en cualquier otro caso debe retornar un *status*
    `404`.
 
-  *` #cd Documentos/Info/Ruby/practica_4/Sinatra/uno/ MoL.rb`*
+ [Ejercicio resuelto](https://github.com/cam-ila/practica-ruby/blob/master/MoL/mol.rb)
+ 
 
 3. Sinatra se define como "*DSL para crear aplicaciones web*". ¿Qué quiere
 decir esto? ¿Qué es un *DSL*?
@@ -223,8 +224,8 @@ decir esto? ¿Qué es un *DSL*?
 
 4. Implementá la misma *app* "MoL" de antes, ahora utilizando Sinatra para
 obtener el mismo resultado.
-5. 
-   *`cd Documentos/Info/Ruby/practica_4/Sinatra/cuatro/ MoL.rb`*
+  [Ejercicio resuelto](https://github.com/cam-ila/practica-ruby/blob/master/cuatro/Mol2.rb)
+   
 
 
 
@@ -239,7 +240,7 @@ obtener el mismo resultado.
   * `POST /random` presenta un número al azar
   * `POST /random/:lower/:upper` presenta un número al azar entre `:lower` y `:upper` (dos valores numéricos)
 
-  ## practica_4/Sinatra/cinco endpoints.rb
+  [Ejercicio resuelto](https://github.com/cam-ila/practica-ruby/blob/master/endpoints/endpoints.rb)
 
 6. Implementá un *middleware* para Sinatra que modifique la respuesta del web server y "tache" cualquier número que
    aparezca en el *body* de la respuesta, cambiando cada dígito por un caracter `X`. Utilizalo en la aplicación anterior
